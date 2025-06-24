@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Drink - NutriDrink</title>
+  <link rel="stylesheet" href="test.css" />
+</head>
+
+<body>
+  <header>
+    <div class="container header-container">
+      <div class="logo">
+        <h1>NutriDrink</h1>
+        <p>Fresh and Healthy Sips</p>
+      </div>
+      <ul class="nav-links">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="drink.html">Our Drinks</a></li>
+        <li><a href="nutrition.html">Nutrition</a></li>
+        <li><a href="store.html">Find a Store</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="filter-section">
+      <h2 class="filter-title">CHOOSE DRINK TYPE</h2>
+      <div class="filter-options">
+        <div class="filter-group">
+          <h3>TYPE</h3>
+          <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="smoothie">
+              Smoothie
+            </button>
+            <button class="filter-btn" data-filter="blended">Blended</button>
+            <button class="filter-btn" data-filter="juiced">Juiced</button>
+            <button class="filter-btn" data-filter="crushed">Crushed</button>
+          </div>
+        </div>
+
+        <div class="filter-group">
+          <h3>HEALTH BENEFITS</h3>
+          <div class="filter-buttons">
+            <button class="filter-btn" data-filter="source-of-protein">Source of Protein</button>
+            <button class="filter-btn" data-filter="low-fat">Low Fat</button>
+            <button class="filter-btn" data-filter="gluten-free">
+              Gluten Free
+            </button>
+            <button class="filter-btn" data-filter="dairy-free">
+              Dairy Free
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="search-bar">
+        <input type="text" placeholder="Search Drinks..." />
+      </div>
+    </div>
+
+    <div class="drinks-grid">
+      <div class="drink-card" data-type="smoothie" data-tags="gluten-free,low-fat,source-of-protein">
+        <div class="drink-image">
+          <img src="https://www.boostjuicebars.co.id/wp-content/uploads/2016/12/Strawberry-Squeeze_large.jpg"
+            alt="Strawberry Squeeze" />
+        </div>
+        <div class="drink-info">
+          <h3 class="drink-name">STRAWBERRY SQUEEZE</h3>
+          <p class="drink-description">
+            Strawberry Yoghurt, Strawberries, Apple Juice, Banana & Ice
+          </p>
+          <div class="drink-tags">
+            <span class="tag">GLUTEN FREE</span>
+            <span class="tag">LOW FAT</span>
+            <span class="tag">SOURCE OF PROTEIN</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="drink-card" data-type="smoothie" data-tags="gluten-free,low-fat,source-of-protein">
+        <div class="drink-image">
+          <img src="https://www.boostjuicebars.co.id/wp-content/uploads/2017/02/All-Berry-Bang_large.jpg"
+            alt="All Berry Bang" />
+        </div>
+        <div class="drink-info">
+          <h3 class="drink-name">ALL BERRY BANG</h3>
+          <p class="drink-description">
+            Strawberry Yoghurt, Blueberries, Strawberries, Apple Juice, Raspberries & Ice
+          </p>
+          <div class="drink-tags">
+            <span class="tag">GLUTEN FREE</span>
+            <span class="tag">LOW FAT</span>
+            <span class="tag">SOURCE OF PROTEIN</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="drink-card" data-type="smoothie" data-tags="gluten-free,low-fat,source-of-protein">
+        <div class="drink-image">
+          <img src="https://www.boostjuicebars.co.id/wp-content/uploads/2017/02/Mango-Magic_large.jpg"
+            alt="Mango Magic" />
+        </div>
+        <div class="drink-info">
+          <h3 class="drink-name">MANGO MAGIC</h3>
+          <p class="drink-description">
+            Mango Nectar, Mango, Banana, Vanilla Yoghurt & Ice
+          </p>
+          <div class="drink-tags">
+            <span class="tag">GLUTEN FREE</span>
+            <span class="tag">LOW FAT</span>
+            <span class="tag">SOURCE OF PROTEIN</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="drink-card" data-type="smoothie" data-tags="gluten-free,source-of-protein,low-fat">
+        <div class="drink-image">
+          <img src="https://www.boostjuicebars.co.id/wp-content/uploads/2016/12/King-William-Chocolate_large-1.jpg"
+            alt="KING WILLIAM CHOCOLATE" />
+        </div>
+        <div class="drink-info">
+          <h3 class="drink-name">KING WILLIAM CHOCOLATE</h3>
+          <p class="drink-description">
+            Banana, Chocolate, Ice, Low Fat Milk & Vanilla Yoghurt
+          </p>
+          <div class="drink-tags">
+            <span class="tag">GLUTEN FREE</span>
+            <span class="tag">LOW FAT</span>
+            <span class="tag">SOURCE OF PROTEIN</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="drink-card" data-type="smoothie" data-tags="low-fat">
+        <div class="drink-image">
+          <img src="https://www.boostjuicebars.co.id/wp-content/uploads/2022/12/Raspberry-Ripe_featured.png"
+            alt="RASPBERRY CHOC" />
+        </div>
+        <div class="drink-info">
+          <h3 class="drink-name">RASPBERRY CHOC</h3>
+          <p class="drink-description">
+            Chocolate, Strawberry Yoghurt, Raspberries, Coconut Milk, Low Fat Milk & Ice
+          </p>
+          <div class="drink-tags">
+            <span class="tag">LOW FAT</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="drink-card" data-type="smoothie" data-tags="low-fat">
+        <div class="drink-image">
+          <img src="https://www.boostjuicebars.co.id/wp-content/uploads/2023/01/Berry-Berry-Light_featured-2.png"
+            alt="Berry Berry Light" />
+        </div>
+        <div class="drink-info">
+          <h3 class="drink-name">BERRY BERRY LIGHT</h3>
+          <p class="drink-description">
+            Strawberry Yoghurt, Blueberries, Strawberries, Apple Juice & Ice
+          </p>
+          <div class="drink-tags">
+            <span class="tag">LOW FAT</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="drink-card" data-type="crushed" data-tags="dairy-free,low-fat,gluten-free">
+        <div class="drink-image">
+          <img src="https://www.boostjuicebars.co.id/wp-content/uploads/2016/12/Berry-Crush_large.jpg"
+            alt="Berry Crush" />
+        </div>
+        <div class="drink-info">
+          <h3 class="drink-name">BERRY CRUSH</h3>
+          <p class="drink-description">Blueberries, Strawberries, Apple Juice, Raspberries, Sorbet & Ice</p>
+          <div class="drink-tags">
+            <span class="tag">DAIRY FREE</span>
+            <span class="tag">GLUTEN FREE</span>
+            <span class="tag">LOW FAT</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="drink-card" data-type="juiced" data-tags="dairy-free,gluten-free">
+        <div class="drink-image">
+          <img src="https://www.boostjuicebars.co.id/wp-content/uploads/2019/06/Wild-Berry-ft.png"
+            alt="Wild Berry Juice" />
+        </div>
+        <div class="drink-info">
+          <h3 class="drink-name">WILD BERRY JUICE</h3>
+          <p class="drink-description">Blueberries, Strawberries, Raspberries, Energiser Booster, Ice & Freshly Juiced
+            Pineapple</p>
+          <div class="drink-tags">
+            <span class="tag">DAIRY FREE</span>
+            <span class="tag">GLUTEN FREE</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="drink-card" data-type="juiced" data-tags="dairy-free,gluten-free">
+        <div class="drink-image">
+          <img src="https://www.boostjuicebars.co.id/wp-content/uploads/2019/06/Lean-Green-ft.png" alt="Lean Green" />
+        </div>
+        <div class="drink-info">
+          <h3 class="drink-name">LEAN & GREEN JUICE</h3>
+          <p class="drink-description">Celery, Cucumber, Mint & Ice</p>
+          <div class="drink-tags">
+            <span class="tag">DAIRY FREE</span>
+            <span class="tag">GLUTEN FREE</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="drink-card" data-type="juiced" data-tags="dairy-free,gluten-free">
+        <div class="drink-image">
+          <img src="https://www.boostjuicebars.co.id/wp-content/uploads/2019/06/5-A-Dayft-1.png" alt="5 A Day" />
+        </div>
+        <div class="drink-info">
+          <h3 class="drink-name">5 A DAY JUICE</h3>
+          <p class="drink-description">Beetroot, Vita Booster, Carrot, Celery, Ice & Freshly Squeezed Orange</p>
+          <div class="drink-tags">
+            <span class="tag">DAIRY FREE</span>
+            <span class="tag">GLUTEN FREE</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="drink-card" data-type="blended" data-tags="source-of-protein">
+        <div class="drink-image">
+          <img src="https://www.boostjuicebars.co.id/wp-content/uploads/2018/07/19.-Protein-Supreme.png"
+            alt="Protein Supreme" />
+        </div>
+        <div class="drink-info">
+          <h3 class="drink-name">PROTEIN SUPREME</h3>
+          <p class="drink-description">Whey Protein, Cinnamon, Vita Booster, Coconut Milk, Coconut Water, Chia, Immunity
+            Booster, Banana, Honey, Muesli & Ice</p>
+          <div class="drink-tags">
+            <span class="tag">SOURCE 0F PROTEIN</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="drink-card" data-type="juiced" data-tags="gluten-free,dairy-free">
+        <div class="drink-image">
+          <img src="https://www.boostjuicebars.co.id/wp-content/uploads/2017/10/Immunity-Juice_large.jpg"
+            alt="Immunity Juice" />
+        </div>
+        <div class="drink-info">
+          <h3 class="drink-name">IMMUNITY JUICE</h3>
+          <p class="drink-description">Strawberries, Immunity Booster, Ice, Freshly Squeezed Orange & Freshly Juiced
+            Watermelon</p>
+          <div class="drink-tags">
+            <span class="tag">GLUTEN FREE</span><span class="tag">DAIRY FREE</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="drink-card" data-type="smoothie" data-tags="source-of-protein,low-fat">
+        <div class="drink-image">
+          <img src="https://www.boostjuicebars.co.id/wp-content/uploads/2017/10/Strawbrekkie_large-1.jpg"
+            alt="Strawbrekkie" />
+        </div>
+        <div class="drink-info">
+          <h3 class="drink-name">STRAWBREKKIE PROTEIN</h3>
+          <p class="drink-description">Oats, Strawberry Yoghurt, Blueberries, Strawberries, Apple Juice, Whey Protein,
+            Banana, Energiser Booster & Ice</p>
+          <div class="drink-tags">
+            <span class="tag">SOURCE OF PROTEIN</span><span class="tag">LOW FAT</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="drink-card" data-type="crushed" data-tags="dairy-free,gluten-free">
+        <div class="drink-image">
+          <img src="https://www.boostjuicebars.co.id/wp-content/uploads/2016/12/Mango-Tango_large.jpg"
+            alt="Mango Tango" />
+        </div>
+        <div class="drink-info">
+          <h3 class="drink-name">MANGO TANGO CRUSH</h3>
+          <p class="drink-description">Mango, pineapple, orange juice, almond milk</p>
+          <div class="drink-tags">
+            <span class="tag">DAIRY FREE</span><span class="tag">GLUTEN FREE</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="drink-card" data-type="juiced" data-tags="gluten-free,dairy-free">
+        <div class="drink-image">
+          <img src="https://www.boostjuicebars.co.id/wp-content/uploads/2018/07/Energiser-Juice_featured-1.png"
+            alt="Energiser Juice" />
+        </div>
+        <div class="drink-info">
+          <h3 class="drink-name">ENERGISER JUICE</h3>
+          <p class="drink-description">Strawberries, Banana, Energiser Booster, Ice & Freshly Squeezed Orange</p>
+          <div class="drink-tags">
+            <span class="tag">GLUTEN FREE</span><span class="tag">DAIRY FREE</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="drink-card" data-type="crushed" data-tags="dairy-free,low-fat">
+        <div class="drink-image">
+          <img src="https://www.boostjuicebars.co.id/wp-content/uploads/2018/07/25.-Watermelon-Crush_featured-1.png"
+            alt="Watermelon Crush" />
+        </div>
+        <div class="drink-info">
+          <h3 class="drink-name">WATERMELON LYCHEE CRUSH</h3>
+          <p class="drink-description">Lychee, Sorbet, Ice & Freshly Juiced Watermelon</p>
+          <div class="drink-tags">
+            <span class="tag">DAIRY FREE</span><span class="tag">LOW FAT</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="drink-card" data-type="crushed" data-tags="dairy-free,gluten-free,low-fat">
+        <div class="drink-image">
+          <img src="https://www.boostjuicebars.co.id/wp-content/uploads/2023/01/Strawberry-Melon-Crush_featured.png"
+            alt="Strawberry Melon Crush" />
+        </div>
+        <div class="drink-info">
+          <h3 class="drink-name">STRAWBERRY MELON CRUSH</h3>
+          <p class="drink-description">Strawberries, Sorbet, Ice & Freshly Juiced Watermelon</p>
+          <div class="drink-tags">
+            <span class="tag">DAIRY FREE</span><span class="tag">GLUTEN FREE</span><span class="tag">LOW FAT</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="drink-card" data-type="smoothie" data-tags="gluten-free">
+        <div class="drink-image">
+          <img src="https://www.boostjuicebars.co.id/wp-content/uploads/2019/06/superfruit-ft.png"
+            alt="SUPERFRUIT ENERGY" />
+        </div>
+        <div class="drink-info">
+          <h3 class="drink-name">SUPERFRUIT ENERGY</h3>
+          <p class="drink-description">Strawberry Yoghurt, Blueberries, Apple Juice, Raspberries, Superfruit Booster,
+            Energiser Booster, Vanilla Yoghurt & Ice</p>
+          <div class="drink-tags">
+            <span class="tag">GLUTEN FREE</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="drink-card" data-type="juiced" data-tags="gluten-free,low-fat">
+        <div class="drink-image">
+          <img src="https://www.boostjuicebars.co.id/wp-content/uploads/2023/01/Blueberry-Blast_featured.png"
+            alt="Blueberry Blast" />
+        </div>
+        <div class="drink-info">
+          <h3 class="drink-name">BLUEBERRY BLAST</h3>
+          <p class="drink-description">Blueberries, Apple Juice, Sorbet, Banana, Vanilla Yoghurt & Ice</p>
+          <div class="drink-tags">
+            <span class="tag">GLUTEN FREE</span><span class="tag">LOW FAT</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="drink-card" data-type="smoothie" data-tags="source-of-protein">
+        <div class="drink-image">
+          <img src="https://www.boostjuicebars.co.id/wp-content/uploads/2017/01/Brekkie-to-Go-Go_large.jpg"
+            alt="Brekkie to Go Go" />
+        </div>
+        <div class="drink-info">
+          <h3 class="drink-name">BREKKIE TO GO GO</h3>
+          <p class="drink-description">Low Fat Milk, Banana, Honey, Muesli, Energiser Booster, Vanilla Yoghurt & Ice</p>
+          <div class="drink-tags">
+            <span class="tag">SOURCE OF PROTEIN</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container footer-container">
+      <div class="footer-logo">
+        <p>Stay Refreshed with Natural and Healthy Sips.</p>
+      </div>
+      <div class="footer-column">
+        <h3>Help</h3>
+        <ul>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="faqs.html">FAQs</a></li>
+          <li><a href="store.html">Find a Store</a></li>
+          <li><a href="tnc.html">Terms & Conditions</a></li>
+        </ul>
+      </div>
+    </div>
+    </div>
+
+    <div class="copyright">
+      <p>&copy; Good Food. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="test.js"></script>
+</body>
+
+</html>

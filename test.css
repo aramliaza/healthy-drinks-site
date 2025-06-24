@@ -1,0 +1,511 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+/* Header Styles */
+header {
+  background-color: #e31837;
+  color: white;
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin-left: 25px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+
+.nav-links a:hover {
+  opacity: 0.8;
+}
+
+/* Filter Section */
+.filter-section {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  margin-bottom: 30px;
+}
+
+.filter-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #e31837;
+}
+
+.filter-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.filter-group {
+  flex: 1;
+  min-width: 200px;
+}
+
+.filter-group h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.filter-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.filter-btn {
+  background-color: #f5f5f5;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+  background-color: #e31837;
+  color: white;
+}
+
+.search-bar {
+  margin-top: 15px;
+  position: relative;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.search-bar input:focus {
+  outline: none;
+  border-color: #e31837;
+}
+
+/* Drinks Grid */
+.drinks-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.drink-card {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.drink-card:hover {
+  transform: translateY(-5px);
+}
+
+.drink-image {
+  height: 200px;
+  overflow: hidden;
+}
+
+.drink-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.drink-info {
+  padding: 20px;
+}
+
+.drink-name {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #e31837;
+}
+
+.drink-description {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+.drink-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 15px;
+}
+
+.tag {
+  background-color: #f0f0f0;
+  color: #555;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+/* Store */
+.store-list ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.store-list ul li {
+  list-style: none;
+  padding: 10px;
+  border: 1px solid #e31837;
+  background-color: #f9f9f9;
+}
+
+/* Nutrition */
+h2 {
+  font-size: 24px; 
+  color: #e31837; 
+  margin-bottom: 15px; 
+}
+
+h3 {
+  font-size: 20px; 
+  color: #e31837; 
+  margin-top: 20px; 
+  margin-bottom: 10px; 
+}
+
+ul {
+  margin: 15px 0; 
+  padding-left: 20px; 
+}
+
+ul li {
+  font-size: 16px; 
+  color: #333; 
+  margin-bottom: 8px; 
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #e31837;
+  color: white;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Home */
+.hero {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  overflow: hidden;
+  color: white;
+}
+
+.hero-video {
+  position: absolute;
+}
+
+.hero-content {
+  z-index: 1;
+  max-width: 800px;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+.explore-drinks {
+  display: inline-block;
+  margin top: 20px;
+  background-color: #e31837;
+  color: white;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 25px;
+  font-weight: bold;
+}
+
+.explore-drinks:hover {
+  background-color: #c91530;
+}
+
+.title {
+  font-family: candara;
+  font-size: 70px;
+}
+
+.features {
+  padding: 30px 0;
+  text-align: center;
+}
+
+.features h3 {
+  font-size: 40px;
+  margin-bottom: 25px;
+  color:#e31837;
+}
+
+.features-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.features-item {
+  background: #fdfdfd;
+  border-radius: 15px;
+  padding: 20px;
+  max-width: 350px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.features-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+}
+
+.features-item a {
+  color: #333;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+}
+
+.features-item h4 {
+  font-size: 30px;
+}
+
+.features-item p {
+  font-size: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .hero-text,
+  .hero-image {
+    max-width: 100%;
+  }
+
+  .hero-image img {
+    max-width: 80%;
+    margin-top: 20px;
+  }
+}
+
+/* Contact */
+.contact-info h2 {
+    text-align: center; 
+    margin-bottom: 30px; 
+}
+
+.contact-info p {
+    font-size: 16px; 
+    color: #666; 
+    line-height: 1.6; 
+    margin-bottom: 10px; 
+}
+
+.contact-info a {
+    color: #e31837; 
+    text-decoration: none; 
+}
+
+.contact-info a:hover {
+    text-decoration: underline; 
+}
+
+.contact-form {
+    background-color: white; 
+    padding: 20px; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+}
+
+.contact-form h3 {
+    font-size: 20px; 
+    color: #e31837; 
+    margin-bottom: 15px; 
+}
+
+.contact-form div {
+    margin-bottom: 15px; 
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%; 
+    padding: 10px; 
+    border: 1px solid #ddd; 
+    border-radius: 4px; 
+    font-size: 16px; 
+    color: #333; 
+}
+
+.contact-form button {
+    background-color: #e31837; 
+    color: white; 
+    padding: 10px 15px; 
+    border: none; 
+    border-radius: 4px; 
+    font-size: 16px; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+}
+
+.contact-form button:hover {
+    background-color: #c91530; 
+}
+
+/* FaQs */
+.faqs h2 {
+    text-align: center; 
+    margin-bottom: 30px; 
+}
+
+/* TnC */
+.terms-conditions h2 {
+    text-align: center; 
+    margin-bottom: 30px; 
+}
+
+/* About */
+.about h2 {
+    text-align: center; 
+    margin-bottom: 30px; 
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 30px 0;
+  margin-top: 50px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-column h3 {
+  font-size: 16px;
+  margin-bottom: 15px;
+  color: #e31837;
+}
+
+.footer-column ul {
+  list-style: none;
+}
+
+.footer-column ul li {
+  margin-bottom: 8px;
+}
+
+.footer-column a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-column a:hover {
+  color: white;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #444;
+  font-size: 12px;
+  color: #999;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .logo {
+    margin-bottom: 15px;
+  }
+
+  .nav-links {
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .nav-links li {
+    margin: 0;
+  }
+
+  .filter-options {
+    flex-direction: column;
+  }
+}
