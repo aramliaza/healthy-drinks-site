@@ -1,4 +1,4 @@
-//drink.html
+/* Drink */
 document.addEventListener('DOMContentLoaded', function () {
     const filterBtns = document.querySelectorAll('.filter-btn')
     const drinkCards = document.querySelectorAll('.drink-card')
@@ -74,3 +74,28 @@ document.addEventListener('DOMContentLoaded', function () {
 
     filterDrinks()
 })
+
+/* Contact */
+document.addEventListener("DOMContentLoaded", function () {
+    const form = document.getElementById("contact-form");
+    form.addEventListener("submit", function (e) {
+        e.preventDefault(); // Mencegah reload halaman
+
+        // Ambil data form
+        const name = form.name.value.trim();
+        const email = form.email.value.trim();
+        const message = form.message.value.trim();
+
+        // Validasi sederhana
+        if (!name || !email || !message) {
+            alert("Please fill in all fields.");
+            return;
+        }
+
+        // Tampilkan pesan sukses
+        alert("Thank you! Your message has been sent.");
+
+        // Reset form
+        form.reset();
+    });
+});
