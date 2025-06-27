@@ -7,7 +7,6 @@
 - Informasi kandungan nutrisi dari setiap produk
 - Lokasi toko untuk mencari gerai terdekat
 - Halaman kontak dan FAQ (pertanyaan umum)
-- Navigasi yang rapi dan desain responsif
 
 ## 🚀 Teknologi yang Digunakan
 - HTML5
@@ -16,7 +15,7 @@
 - GitHub Pages (untuk hosting statis)
 
 ## 🧠 Tujuan & Inspirasi
-Proyek ini dibuat untuk keperluan **edukasi dan pengembangan portofolio pribadi**. Konsep dan ide visualnya **terinspirasi dari brand seperti Boost Juice**, namun proyek ini **tidak memiliki afiliasi resmi** dan tidak dimaksudkan untuk penggunaan komersial.
+Website ini dibuat untuk memenuhi tugas proyek akhir mata kuliah **Pemrograman Web 1**. Selain untuk menilai pemahaman mahasiswa terhadap materi HTML, CSS, dan JavaScript, proyek ini juga bertujuan untuk mengasah keterampilan dalam membangun antarmuka web yang sederhana namun interaktif. Konsep website ini terinspirasi dari brand minuman sehat seperti *Boost Juice*, namun proyek ini bersifat fiktif dan tidak berafiliasi dengan brand apapun.
 
 ## 🌐 Live Demo
 Website ini dapat diakses secara langsung melalui GitHub Pages:  
