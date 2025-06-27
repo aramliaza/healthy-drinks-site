@@ -79,23 +79,19 @@ document.addEventListener('DOMContentLoaded', function () {
 document.addEventListener("DOMContentLoaded", function () {
     const form = document.getElementById("contact-form");
     form.addEventListener("submit", function (e) {
-        e.preventDefault(); // Mencegah reload halaman
+        e.preventDefault(); 
 
-        // Ambil data form
         const name = form.name.value.trim();
         const email = form.email.value.trim();
         const message = form.message.value.trim();
 
-        // Validasi sederhana
         if (!name || !email || !message) {
             alert("Please fill in all fields.");
             return;
         }
 
-        // Tampilkan pesan sukses
         alert("Thank you! Your message has been sent.");
 
-        // Reset form
         form.reset();
     });
 });
